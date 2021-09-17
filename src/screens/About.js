@@ -1,10 +1,15 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text,Button } from "react-native";
 
-const About = () => {
+const About = ({ navigation }) => {
   return (
     <View style={styles.center}>
-      <Text>Login Successfully</Text>
+      <Text>Login</Text>
+
+      <Button
+        title="Click"
+        onPress={() => navigation.navigate("Fire")} 
+      />
     </View>
   );
 };
